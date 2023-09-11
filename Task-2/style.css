@@ -1,0 +1,73 @@
+body{
+    background: linear-gradient(to bottom, #36454F,#232B2B);
+    color: salmon;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.main{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+
+    margin: 10px;
+    border: 2px solid salmon;
+    display:block; 
+    color: bisque;
+    padding: 20px;
+    border-radius: 10px; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: 0.5px 6px 10px rgba(0, 0, 0, 0.915);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+.buttons{
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+button{
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.933);
+    height: 8vh;
+    width: 150px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: salmon;
+    cursor: pointer;
+
+}
+button:hover{
+    box-shadow: 0px 2px 50px rgba(250, 128, 114, 0.871);
+    color: #232B2B;
+    background-color: salmon;
+   transition: background-color .2s ease;
+
+}
+
+#Timer{
+    font-size: 80px;
+}
+h1{
+    color: salmon;
+    font-size: 40px;
+    text-shadow: 0px 0.5px 80px;
+}
