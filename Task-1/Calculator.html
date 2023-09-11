@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Ravi Buraga - Calculator
+        </title>
+        <link rel="stylesheet" href="Calc.css">
+        
+    </head>
+    <body>
+      <div class="container">  
+        <div class="clac">
+            <div class="result">
+                <input id="entered"> 
+                <input id="result-place">
+                 <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+            </div>
+            <div class="btn">
+                <div class="row">
+                    <button id='ac' onclick="allClear()">AC</button>
+                    <button id='del'  onclick="Del('Del')">Del</button>
+                    <button id="operator" onclick="myButton('%')">%</button>
+                    <button id="operator" onclick="myButton('*')">x</button>
+                </div>
+                <div class="row">
+                    <button onclick="myButton('7')">7</button>
+                    <button onclick="myButton('8')">8</button>
+                    <button onclick="myButton('9')">9</button>
+                    <button id="operator" onclick="myButton('+')">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="myButton('4')">4</button>
+                    <button onclick="myButton('5')">5</button>
+                    <button onclick="myButton('6')">6</button>
+                    <button id="operator" onclick="myButton('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="myButton('1')">1</button>
+                    <button onclick="myButton('2')">2</button>
+                    <button  onclick="myButton('3')">3</button>
+                    <button id="operator" onclick="myButton('/')">/</button>
+                </div>
+                <div class="row">
+                    <button id="dot" onclick="myButton('.')">.</button>
+                    <button id="zero" onclick="myButton('0')">0</button>
+                    <button id="equal" onclick="answer()">=</button>
+
+                </div>
+            </div>
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </div>
+      </div>  
+      <script src="Calculate.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,269 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clac{
+    margin: 10px;
+    border: 2px solid white;
+    background-color: black ;
+    display:block; 
+    color: bisque;
+    padding: 20px;
+    border-radius: 10px; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    border-top: 1px solid  rgba(255, 68, 0, 0.5) ;
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(218, 112, 214, 0.5);
+    border-left: 1px solid rgba(255, 166, 0, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+
+}
+.result{
+
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+    border-top: 1px solid  rgba(255, 68, 0, 0.5) ;
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(218, 112, 214, 0.5);
+    border-left: 1px solid rgba(255, 166, 0, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+  
+    
+}
+#result-place{
+    font-size: 30px;
+    justify-content: left;
+    display: flex;
+    color: rgb(0, 255, 255);
+
+}
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2px;
+}
+#entered{
+   text-align: right;
+    display: flex;
+    font-size: 25px;
+    color: orchid;
+
+}
+.btn{
+    justify-content: center;
+    display: center;
+}
+.row{
+    width: 110%;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+.row button{
+   margin: 8px;
+    height: 60px;
+    width: 75px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+.row button:hover{
+    border-radius: 25px;
+    color: blueviolet;
+}
+#equal{
+    width: 110px;
+    color: orchid;
+    font-size: 22px;
+    margin-left: 20px;
+}
+#ac{
+    color: orangered;
+}
+#del{
+    color: orange;
+}
+#operator{
+    color:rgb(0, 255, 255);
+    font-size: 20px;
+}
+#zero{
+    width: 110px;
+    margin-left: 20px;
+}
+#dot{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 68, 0, 0.5),
+     orangered
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(218, 112, 214),
+      rgba(218, 112, 214, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+       orange,
+      rgba(255, 166, 0, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 4s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 4s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 4s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 4s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
