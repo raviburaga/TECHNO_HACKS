@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <title>
+            Currency Converter - Ravi Buraga
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="main">
+            <h1>Currency Converter</h1>
+      
+           
+            <div class="currency_types">
+                <div class="curren">
+                    <label for="rupi">Indian - Rupee</label>
+                    <input type="number" name="rupi" id="rupi" class="rupi" placeholder="Enter in rupees....." oninput="ruppeeConvo()">
+                </div>
+                <div class="curren">
+                    <label for="dolla">USA - Dollar</label>
+                    <input type="number" name="dolla" id="dolla" class="dolla" placeholder="Enter in Dollars....." oninput="dollaConvo()">
+                </div>
+                <div class="curren">
+                    <label for="crn-1">Japanese Yen </label>
+                    <input type="number" name="crn-1" id="crn-1" class="crn-1" placeholder="Enter in Japanese Yen" oninput="yenConvo()">
+                </div>
+                <div class="curren">   
+                     <label for="crn-2">Chinese Yaun</label>
+                    <input type="number" name="crn-2" id="crn-2" class="crn-2" placeholder="Enter in Yaun" oninput="yaunConvo()">
+                </div>
+            
+               <div class="curren">   
+                <label for="crn-4">Dubai - Emirati Dirham</label>
+               <input type="number" name="crn-4" id="crn-4" class="crn-4" placeholder="Enter in Emirati Dirham" oninput="dhiramConvo()">
+           </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

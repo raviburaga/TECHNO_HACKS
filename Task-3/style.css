@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'mulish', sans-serif;
+}
+body{
+
+    color: aliceblue;
+    background-color: blue;
+    background: linear-gradient(to left top,#1B1B1B,#2C3539);
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1b4;
+    font-size: 45px;
+    text-shadow: 5px 5px 40px white,-5px -5px 40px #3B3C36;
+}
+.currency_types{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2s linear;
+    width: 99vw;
+    height: 40vh;
+    margin: auto;
+    border: none;
+    margin: 50px;
+    border-radius: 40px;
+    background: linear-gradient(to right bottom,#494F55,#3B3C36);
+    box-shadow: 1px 1px 60px #0e0b0b;
+    
+}
+.curren{
+    height: 200px;
+    flex: 1 1 250px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 30px;
+
+
+}
+.curren:first-child{
+    background-color: transparent;
+    box-shadow: 0px 0px 30px aqua;
+    
+
+}
+.curren:nth-child(2){
+    background-color: transparent;
+    box-shadow: 0px 0px 40px #1b4;
+}
+.curren:nth-child(3){
+    background-color: transparent;
+    box-shadow: 0px 0px 40px salmon;
+    
+}
+.curren:nth-child(4){
+    background-color: transparent;
+    box-shadow: 0px 0px 40px olivedrab;
+}
+.curren:nth-child(5){
+    background-color: transparent;
+    box-shadow: 0px 0px 40px orange;
+}
+.curren:last-child{
+    background-color: transparent;
+    box-shadow: 0px 0px 40px  red;
+}
+.curren label{
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    text-shadow: 0px 0px 40px white ;
+}
+
+.curren input{
+    width: 90%;
+    height: 6vh;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 0px 10px #1B1B1B;
+    text-align: center;
+}
+.curren input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+@media(max-width: 1200px){
+    .currency{
+        height: auto;
+    }
+    .currency_types{
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+}
